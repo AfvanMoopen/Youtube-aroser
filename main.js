@@ -105,7 +105,7 @@ function timeCalculator(diff){
 }
 
 async function getData(videoId){
-    let url = "https://youtube.googleapis.com/youtube/v3/videos?part=statistics&id=" + videoId + "&fields=items.statistics&key=AIzaSyAPXyji7zyhfUM5932TTdkD7BXQT5RMCyY";
+    let url = "https://youtube.googleapis.com/youtube/v3/videos?part=statistics&id=" + videoId + "&fields=items.statistics&key={API-KEY}";
     return await fetch(url)
     .then(async data => {
         Data1 = await data.json();
